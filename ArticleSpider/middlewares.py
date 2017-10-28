@@ -16,6 +16,10 @@ proxyUser = "HX4W83X251K9257D"
 proxyPass = "D50BEF759B62A4D9"
 
 proxyAuth = "Basic " + base64.urlsafe_b64encode(bytes((proxyUser + ":" + proxyPass), "ascii")).decode("utf8")
+'''
+由于免费IP代理确实才垃圾，需要代理可以去买收费版的。
+User_Agent的切换使用的是fake-useragent
+'''
 class ArticlespiderSpiderMiddleware(object):
     # Not all methods need to be defined. If a method is not defined,
     # scrapy acts as if the spider middleware does not modify the
